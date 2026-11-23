@@ -38,7 +38,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
-    padding: 2rem 0;
+    padding: 2rem 0.5rem;
 }
 
 .casha_cta_link {
@@ -141,7 +141,7 @@
     height: auto;
     background-color: var(--secondary-color);
     padding: 3rem 4rem;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .casha_aboutme_illustration {
@@ -521,6 +521,14 @@
         padding: 2rem 1rem;
     }
 
+    .casha_skills_title {
+        p {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: center;
+        }
+    }
+
     .casha_skillcard_container {
         width: 100%;
         max-width: 320px;
@@ -718,5 +726,14 @@
 
     .casha_contact_rrss {
         gap: 1.25rem;
+    }
+
+    .casha_contact_cta
+    .casha_cta {
+        font-size: 0.8125rem ;
+
+        .casha_icon {
+            width: 20px;
+        }
     }
 }
