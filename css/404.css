@@ -1,0 +1,18 @@
+.casha_404_container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.casha_404_illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 170px);
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+    background-color: var(--dark-color);
+}

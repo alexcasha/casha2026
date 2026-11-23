@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/404.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <title>casha</title>
+        <title>Casha | Consultoria Digital</title>
     </head>
     <body>
         <div id="casha_container" class="casha_container">
@@ -24,24 +26,58 @@
                 </label>
 
                 <div class="casha_navbar_logo col-1">
-                    <a href="../es/index.html">
+                    <a href="./index.html">
                         <picture>
-                            <source media="(max-width: 425px)" srcset="../assets/casha_brand_monograma.png">
+                            <source media="(max-width: 950px)" srcset="../assets/casha_brand_monograma.png">
                             <img src="../assets/casha_brand_logo.png" alt="casha logo">
                         </picture>
                     </a>
                 </div>
                 <div class="casha_navbar_menu col-2">
-                    <span class="casha_navbar_menu_items active">Home</span>
-                    <a href="../es/pages/trayectoria.html" class="casha_navbar_menu_items">Trayectoria</a>
-                </div>
+                    <span class="casha_navbar_menu_items active">
+                        Home
+                    </span>
+                    <a href="./index.html#casha_skills" class="casha_navbar_menu_items">
+                        Servicios
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="casha_dropdown">
+                        <button class="casha_navbar_menu_items casha_dropbtn">
+                            Portfolio
 
+                            <svg class="casha_arrow_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="casha_dropdown_content">
+                            <a href="./pages/404.html" class="casha_navbar_menu_items">
+                                Trayectoria
+                            </a>
+                            <a href="./pages/404.html" class="casha_navbar_menu_items">
+                                Proyectos
+                            </a>
+                        </div>
+                    </div>
+                    <a href="./pages/contact.html" class="casha_navbar_menu_items">
+                        Contacto
+                    </a>
+                </div>
+                <!-- Col-3 -->
                 <div class="casha_navbar_language col-3">
-                    <a href="../index.html" class="casha_lang_item" >EN</a>
+                    <a href="../../index.html" class="casha_lang_item" >EN</a>
                     <span class="casha_lang_separator">|</span>
                     <span class="casha_lang_item active" >ES</span>
                 </div>
+                <!-- Col-4 -->
+                <div class="casha_navbar_cta col-4">
+                    <a href="https://wa.me/525653962754">
+                        <button class="casha_cta  casha_cta_primary">
+                            Charlemos
+                        </button>
+                    </a>
+                </div>
              </nav>
+
             <!-- Heroarea -->
              <section id="casha_heroarea" class="casha_heroarea">
                 <div class="casha_title casha_heroarea_content">
@@ -57,6 +93,9 @@
                             ¡Trabajemos juntos!
                         </button>
                     </a>
+                    <a href="#casha_skills" class="casha_cta_link"> 
+                        Explore services →
+                        </a>
                     </div>
                 </div>
             </section>
