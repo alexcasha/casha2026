@@ -19,25 +19,25 @@
 
         <header id="casha_header" class="casha_header">
             <nav class="casha_navbar_container">
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
                 <!-- Hamburguer Menu-->
                 <div class="casha_navbar_hamburger_menu">
+                    <div class="casha_hamburger_wraper">
 
-                    <!-- Hamburguer Icon-->
-                    <label for="menu-toggle" class="casha_navbar_hamburger" aria-label="Open menu">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </label>
+                        <!-- Hamburguer Icon Abre el menú-->
+                        <button type="button" tabindex="0"  class="casha_navbar_hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="casha_navbar_menu">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
 
-                    <!-- Menu Items -->
+                   <!-- Menu Items -->
                     <div class="casha_navbar_menu">
-                        <span class="casha_navbar_menu_items active">
+                        <a href="../index.html" class="casha_navbar_menu_items">
                             Home
-                        </span>
+                        </a>
                         <a href="../index.html#casha_skills" class="casha_navbar_menu_items">
                             Services
                         </a>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
 
-                        <a href="./contact.html" class="casha_navbar_menu_items">
+                        <a href="./pages/contact.html" class="casha_navbar_menu_items">
                             Contact
                         </a>
 
@@ -70,7 +70,9 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <button type="button"  tabindex="0"  class="casha_menu_close_overlay" aria-label="Cerrar menú" aria-expanded="true"  aria-controls="casha_navbar_menu"></button>
+
                 <!-- Logo -->
                   <div class="casha_navbar_logo">
                     <a href="../index.html">
@@ -81,7 +83,6 @@
                     </a>
                 </div>
 
-                
                 <!-- Languages -->
                 <div class="casha_navbar_language">
                     <span class="casha_lang_item active" >EN</span>

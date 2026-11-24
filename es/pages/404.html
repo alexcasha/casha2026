@@ -15,28 +15,28 @@
         <title>Casha | Página no encontrada</title>
     </head>
     <body>
-        <header id="casha_header" class="casha_header">
+         <header id="casha_header" class="casha_header">
             <nav class="casha_navbar_container">
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
                 <!-- Hamburguer Menu-->
                 <div class="casha_navbar_hamburger_menu">
+                    <div class="casha_hamburger_wraper">
 
-                    <!-- Hamburguer Icon-->
-                    <label for="menu-toggle" class="casha_navbar_hamburger" aria-label="Open menu">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </label>
+                        <!-- Hamburguer Icon Abre el menú-->
+                        <button type="button" tabindex="0"  class="casha_navbar_hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="casha_navbar_menu">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
 
                     <!-- Menu Items -->
-                    <div class="casha_navbar_menu">
-                        <a href="../index.html" class="casha_navbar_menu_items active">
+                    <div id="casha_navbar_menu" class="casha_navbar_menu">
+                        <a href="../index.html" class="casha_navbar_menu_items">
                             Home
                         </a>
-                        <a href="../ndex.html#casha_skills" class="casha_navbar_menu_items">
+                        <a href="../index.html#casha_skills" class="casha_navbar_menu_items">
                             Servicios
                         </a>
 
@@ -47,17 +47,17 @@
                             </span>
 
                             <div class="casha_dropdown_content">
-                                <a href="../pages/404.html" class="casha_navbar_menu_items">
+                                <a href="./404.html" class="casha_navbar_menu_items">
                                 Trayectoria
                                 </a>
-                                <a href="../pages/404.html" class="casha_navbar_menu_items">
+                                <a href="./404.html" class="casha_navbar_menu_items">
                                     Proyectos
                                 </a>
                             </div>
                         </div>
 
-                        <a href="../pages/contacto.html" class="casha_navbar_menu_items">
-                            Contact
+                        <a href="./contacto.html" class="casha_navbar_menu_items">
+                            Contacto
                         </a>
 
                         <!-- CTA -->
@@ -68,18 +68,19 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <button type="button"  tabindex="0"  class="casha_menu_close_overlay" aria-label="Cerrar menú" aria-expanded="true"  aria-controls="casha_navbar_menu"></button>
+
                 <!-- Logo -->
-                  <div class="casha_navbar_logo">
-                    <a href="./../index.html">
+                <div class="casha_navbar_logo">
+                    <a href="../index.html">
                         <picture>
-                            <source media="(max-width: 450px)" srcset="../../assets/casha_brand_monograma.png">
+                            <source media="(max-width: 450px)" srcset="../assets/casha_brand_monograma.png">
                             <img src="../../assets/casha_brand_logo.png" alt="Casha logo">
                         </picture>
                     </a>
                 </div>
 
-                
                 <!-- Languages -->
                 <div class="casha_navbar_language col-3">
                     <a href="../../index.html" class="casha_lang_item" >EN</a>
