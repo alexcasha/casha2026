@@ -29,7 +29,7 @@
 }
 
 .casha_titlle_span {
-    color: var(--accent-color);
+    color: var(--accent-dark-color);
 }
 
 .casha_heroarea_content_cta {
@@ -39,7 +39,9 @@
     align-items: center;
     gap: 3rem;
     padding: 2rem 0.5rem;
+    box-shadow: var(--inactive-color);
 }
+
 
 .casha_cta_link {
     display: flex;
@@ -52,7 +54,7 @@
 .casha_cta_link:hover {
     font-style: italic;
     cursor: default;
-    text-decoration: underline 3px double  var(--accent-color);
+    text-decoration: underline 3px double  var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -292,7 +294,7 @@
 
 }
 
-/* Skills */
+/* Contact */
 .casha_skills {
     display: flex;
     flex-direction: column;
@@ -311,7 +313,7 @@
     align-items: center;
     width: 100%;
     gap: 2rem;
-    text-decoration: underline 3px double var(--accent-color);
+    text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -327,198 +329,72 @@
     padding: 1rem;
 }
 
-.casha_skillcard_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Tamaño específico de las tarjetas en Skills */
+.casha_skillcard_size {
     width: 500px;
     height: 500px;
-    perspective: 1000px;
 }
 
- .casha_skillcard {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.7s;
-    transform-style: preserve-3d;
-}
-
-.casha_skillcard_container:hover .casha_skillcard,
-.casha_skillcard_container:focus-within .casha_skillcard {
-    transform: rotateY(180deg);
-}
-
-.casha_skillcard_container:hover .casha_skillcard .casha_flip_icon,
-.casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon {
-    color: var(--accent-color);
-}
-
-.casha_skillcard_container:hover .casha_skillcard .casha_flip_icon svg,
-.casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon svg {
-    transform: rotate(45deg);
-}
-
-.casha_skillcard_face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: 2rem;
-    padding: 2rem;
-}
-
-.casha_skillcard_front {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    background-color: var(--bg-card-color);
-    color: var(--light-color);
-    padding: 2rem;
-    gap: 1rem;
-}
-
- .casha_skillcard_illustration {
+/* Ilustración interna (Frente) */
+.casha_skillcard_illustration {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
     max-width: 12rem;
     min-height: 0;
-
-    img {
-        max-height: 100%;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-    }
 }
 
-.casha_card_title {
+.casha_skillcard_illustration img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Lista de servicios (Reverso) */
+.casha_skillcard_back_content {
+    padding: 5rem;
+}
+
+.casha_skillcard_back_content ul {
     display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    h3 {
-        font-size: clamp(1.15rem, 1.5vw, 1.5rem);
-        font-weight: 600;
-        line-height: 1.25;
-        margin: 0;
-    }
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 0;
+    padding: 0;
 }
 
-.casha_card_back_title {
-    font-size: clamp(1.15rem, 1.5vw, 1.5rem);
-    font-weight: 600;
-    line-height: 1.25;
-    margin: 0;
-    text-align: center;
+.casha_skillcard_back_content li {
+    color: var(--light-color);
+    list-style-type: none;
 }
 
-.casha_skillcard_back li::before {
+.casha_skillcard_back_content li::before {
     content: "✓ ";
     color: var(--accent-color);
     font-weight: 700;
 }
 
-.casha_flip_icon {
-    display: inline-flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-    margin: 0;
-    width: auto;
-    height: auto;
-    color: var(--light-color); 
-    transition: color 0.3s ease;
-
-    .small {
-        margin: 0;
-        line-height: 1;
-        white-space: nowrap;
-    }
-
-    svg {
-        width: 15px;
-        height: 15px;
-        flex-shrink: 0;
-        transition: transform 0.3s ease;
-    }
-}
-
-.casha_skillcard_back {
-    /* Lector Readers */
-    visibility: hidden;
-    transition: visibility 0.7s;
-    /* Design */
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-color);
-    box-shadow: var(--shadow-light-box);
-    color: var(--light-color);
-    transform: rotateY(180deg);
-
-    h3 {
-        margin: 0;
-        text-align: center;
-    }
-
-    ul {
-        text-align: left;
-        margin-top: 2rem;
-        margin-left: 0;
-        padding: 0;
-    }
-
-    li {
-        color: var(--light-color);
-        list-style-type: none;
-    }
-}
-
-/* Lector Readers */
-.casha_skillcard_container:hover .casha_skillcard_back,
-.casha_skillcard_container:focus-within .casha_skillcard_back {
-    visibility: visible;
-}
-
-.casha_skillcard_container:hover .casha_skillcard_front,
-.casha_skillcard_container:focus-within .casha_skillcard_front {
-    visibility: hidden;
-    transition: visibility 0s linear 0.35s;
-}
-
-/* --------- RESPONSIVE Skills ---------  */
+/* --------- RESPONSIVE Skills --------- */
 @media (max-width: 1190px) {
-    .casha_skillcard_container {
+    .casha_skillcard_size {
         width: 400px;
         height: 400px;
     }
 
-    .casha_skillcard_front {
-        padding: 1.75rem;
-        gap: 0.85rem;
-
-        .casha_skillcard_illustration {
-            max-width: 10.5rem;
-        }
+    .casha_skillcard_illustration {
+        max-width: 10.5rem;
     }
 
-    .casha_skillcard_back {
+    .casha_skillcard_back_content {
         padding: 2.5rem;
+    }
 
-        li {
-            font-size: 1rem;
-        }
+    .casha_skillcard_back_content li {
+        font-size: 1rem;
     }
 }
 
@@ -527,57 +403,41 @@
         padding: 2.5rem 2rem;
     }
 
-    .casha_skillcard_container {
+    .casha_skillcard_size {
         width: 350px;
         height: 350px;
     }
 
-    .casha_skillcard_front {
+    .casha_skillcard_size .casha_flipcard_face {
         padding: 1.5rem;
         gap: 0.75rem;
-
-        .casha_skillcard_illustration {
-            max-width: 9.5rem;
-        }
-
-        .casha_card_title 
-        h3 {
-            font-size: 1.05rem;
-            font-weight: 600;
-            line-height: 1.3;
-        }
-
-        .casha_flip_icon {
-            width: 22px;
-            height: 22px;
-        }
     }
 
-    .casha_skillcard_back {
+    .casha_skillcard_illustration {
+        max-width: 9.5rem;
+    }
+
+    .casha_skillcard_size .casha_card_title h3 {
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+
+    .casha_skillcard_back_content {
         padding: 2.25rem;
-
-        h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            line-height: 1.5;
-        }
-
-        ul {
-            margin-top: 1rem;
-            gap: 0.35rem;
-        }
-
-        li {
-            font-size: 0.875rem;
-        }
     }
-}
 
-@media (max-width: 768px) {
-    .casha_flip_icon {
-        span {
-            padding-right: 2.5rem;
-        }
+    .casha_skillcard_back_content h3 {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    .casha_skillcard_back_content ul {
+        margin-top: 1rem;
+        gap: 0.35rem;
+    }
+
+    .casha_skillcard_back_content li {
+        font-size: 0.875rem;
     }
 }
 
@@ -586,15 +446,7 @@
         padding: 2rem 1rem;
     }
 
-    .casha_skills_title {
-        p {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            text-align: center;
-        }
-    }
-
-    .casha_skillcard_container {
+    .casha_skillcard_size {
         width: 100%;
         max-width: 320px;
         height: 320px;
@@ -602,73 +454,27 @@
 }
 
 @media (max-width: 375px) {
-    .casha_skillcard_container {
+    .casha_skillcard_size {
         max-width: 300px;
         height: 300px;
     }
 
-    .casha_skillcard_back {
+    .casha_skillcard_back_content {
         padding: 1.75rem;
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        ul {
-            margin-top: 0.85rem;
-            gap: 0.3rem;
-        }
-
-        li {
-            font-size: 0.8125rem;
-            line-height: 1.35;
-        }
-    }
-}
-
-/* -------- NAVBAR Accessibility  keyboard navigation -------- */
-.casha_skillcard_container:focus-visible {
-    outline: 4px solid var(--accent-color); 
-    outline-offset: 6px;
-    border-radius: 2.25rem;
-}
-
-.casha_skillcard_container:focus:not(:focus-visible) {
-    outline: none;
-}
-
-/* -------- NAVBAR  PREFERS-REDUCED-MOTION -------- */
-@media (prefers-reduced-motion: reduce) {
-    /* 1. Eliminamos la animación de giro 3D y de rotación del ícono */
-    .casha_skillcard,
-    .casha_flip_icon,
-    .casha_flip_icon svg {
-        transition: none;
     }
 
-    /* 2. En lugar de girar 180° en 3D, cambiamos las caras sin rotación */
-    .casha_skillcard_container:hover .casha_skillcard,
-    .casha_skillcard_container:focus-within .casha_skillcard {
-        transform: none;
+    .casha_skillcard_back_content h3 {
+        font-size: 1rem;
     }
 
-    /* 3. El reverso aparece de frente (sin espejo) al hacer hover o focus */
-    .casha_skillcard_back {
-        transform: none;
-        opacity: 0;
-        visibility: hidden;
+    .casha_skillcard_back_content ul {
+        margin-top: 0.85rem;
+        gap: 0.3rem;
     }
 
-    .casha_skillcard_container:hover .casha_skillcard_back,
-    .casha_skillcard_container:focus-within .casha_skillcard_back {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* 4. El ícono de giro cambia de color pero no rota */
-    .casha_skillcard_container:hover .casha_skillcard .casha_flip_icon svg,
-    .casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon svg {
-        transform: none;
+    .casha_skillcard_back_content li {
+        font-size: 0.8125rem;
+        line-height: 1.35;
     }
 }
 

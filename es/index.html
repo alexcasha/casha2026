@@ -14,6 +14,8 @@
     </head>
 
     <body>
+        <a href="#main-content" class="casha_skip_link">Skip to main content</a>
+
        <header id="casha_header" class="casha_header">
             <nav class="casha_navbar_container">
                 <!-- Hamburguer Menu-->
@@ -32,7 +34,7 @@
 
                     <!-- Menu Items -->
                     <div id="casha_navbar_menu" class="casha_navbar_menu">
-                        <span class="casha_navbar_menu_items active">
+                        <span class="casha_navbar_menu_items active" aria-current="page">
                             Home
                         </span>
                         <a href="../es/index.html#casha_skills" class="casha_navbar_menu_items">
@@ -61,7 +63,7 @@
 
                         <!-- CTA -->
                         <div class="casha_navbar_cta">
-                            <a href="https://wa.me/525653962754?text=Hola%20Casha"  class="casha_cta primarycta casha_cta_navbar" data-track="navbar_cta_whatsapp">
+                            <a href="https://wa.me/525653962754?text=Hola%20Casha"  class="casha_cta primarycta_dark casha_cta_navbar" data-track="navbar_cta_whatsapp">
                                 Charlemos
                             </a>
                         </div>
@@ -89,7 +91,7 @@
             </nav>
         </header>
 
-        <main id="casha_container" class="casha_container">
+        <main id="main-content" tabindex="-1">
             <!-- Heroarea -->
              <section id="casha_heroarea" class="casha_heroarea">
                 <div class="casha_heroarea_content">
@@ -103,7 +105,7 @@
                         Construimos tu presencia en línea e impulsamos tu negocio con soluciones digitales que convierten tus ideas en oportunidades.
                     </p>
                     <div class="casha_heroarea_content_cta">
-                    <a href="#casha_contact" class="casha_cta primarycta">
+                    <a href="#casha_contact" class="casha_cta primarycta_dark">
                         Crezcamos juntos
                     </a>
                     <a href="#casha_skills" class="casha_cta_link"> 
@@ -153,12 +155,13 @@
                         Servicios
                     </h2>
                 </div>
-                <div class="casha_skills_content">
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                <!-- Ecommerce -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
-                                    <img  src="../assets/casha-illustration-ecommerce.png" alt="Zorrito Cashita sosteniendo una bolsa y caja representando compras por internet">
+                                    <img  src="./assets/casha-illustration-ecommerce.png" alt="Zorrito Cashita sosteniendo una bolsa y caja representando compras por internet">
                                 </div>
                                 <div class="casha_card_title">
                                     <h3>
@@ -179,10 +182,11 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
-                                <p class="casha_card_back_title">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
+                                <h3>
                                     ecommerce
-                                </p>
+                                </h3>
                                 <ul>
                                     <li>
                                         Estrategia comercial y de precios
@@ -197,17 +201,19 @@
                                         Control de inventario y órdenes de compra
                                     </li>
                                     <li>
-                                        Envíos, devoluciones y experiencia del cliente
+                                       Envíos, devoluciones y experiencia del cliente
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    </article>
+                    <!-- Developer -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
-                                    <img src="../assets/casha-illustration-developer.png" alt="Zorrito Cashita trabajando en una computadora con emojis referentes a código y configuraciones de sitios web.">
+                                    <img src="./assets/casha-illustration-developer.png" alt="Zorrito Cashita trabajando en una computadora con emojis referentes a código y configuraciones de sitios web.">
                                 </div>
                                 <div class="casha_card_title">
                                     <h3>
@@ -228,10 +234,11 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
-                                <p class="casha_card_back_title"3>
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
+                                <h3>
                                     Desarrollo Web
-                                </p>
+                                </h3>
                                 <ul>
                                     <li>
                                         Desarrollo Front-end
@@ -251,16 +258,18 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <article class="casha_skillcard_container" tabindex="0" role="group" aria-label="Servicio de ecommerce: más detalles">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    </article>
+                    <!-- Design -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
-                                    <img src="../assets/casha-illustration-design.png" alt="Zorrito Cashita haciendo wireframes en una tablet, con documentos sobre el escritorio como una paleta de colores y hasta un café.">
+                                    <img src="./assets/casha-illustration-design.png" alt="Zorrito Cashita haciendo wireframes en una tablet, con documentos sobre el escritorio como una paleta de colores y hasta un café.">
                                 </div>
                                 <div class="casha_card_title">
                                     <h3>
-                                       Design UX/UI
+                                        Diseño UX/UI
                                     </h3>
                                 </div>
                                 <div class="casha_flip_icon">
@@ -277,10 +286,11 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
-                                <p class="casha_card_back_title">
-                                    Design UX/UI
-                                </p>
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
+                                <h3>
+                                    Diseño UX/UI
+                                </h3>
                                 <ul>
                                     <li>
                                         Diseño de landing pages de alta conversión
@@ -301,11 +311,13 @@
                             </div>
                         </div>
                     </article>
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    <!-- Marketing Digital -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration">
-                                    <img src="../assets/casha-illustration-marketer.png" alt="Zorrito Cashita con un megáfono simbolizando que anuncia las ofertas. Lo rodean iconos de las redes sociales y gráficas de KPI 's de performance.">
+                                    <img src="./assets/casha-illustration-marketer.png" alt="Zorrito Cashita con un megáfono simbolizando que anuncia las ofertas. Lo rodean iconos de las redes sociales y gráficas de KPI 's de performance.">
                                 </div>
                                 <div class="casha_card_title">
                                     <h3>
@@ -326,13 +338,17 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
-                                <p class="casha_card_back_title">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
+                                <h3>
                                     Marketing Digital
-                                </p>
+                                </h3>
                                 <ul>
                                     <li>
                                         Estrategia de marca y contenido
+                                    </li>
+                                    <li>
+                                        Conversion optimization (CRO)
                                     </li>
                                     <li>
                                         SEO y anuncios en marketplaces
@@ -341,16 +357,12 @@
                                         Optimización de conversión (CRO)
                                     </li>
                                     <li>
-                                        Gestión de temporadas altas y campañas
-                                    </li>
-                                    <li>
                                         Analítica y seguimiento de KPIs
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article >
             </section>
 
             <!-- Contact -->

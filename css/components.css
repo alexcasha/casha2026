@@ -21,6 +21,16 @@
     background-color: var(--secondary-color);
 }
 
+.primarycta_dark {
+    background-color: var(--accent-dark-color);
+    color: var( --dark-color);
+    border: 1.5px solid var(--dark-color);
+}
+
+.primarycta_dark:hover {
+    background-color: var(--secondary-color);
+}
+
 /* -------- RESPONSIVE CTA -------- */
 @media  (max-width: 670px) { 
    .casha_cta  {
@@ -137,7 +147,7 @@
 
 .casha_navbar_menu_items:hover {
     color: var(--dark-color);
-    text-decoration: underline 3px double var(--accent-color);
+    text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -146,7 +156,7 @@
     font-weight: 800;
     pointer-events: none;
     color: var(--dark-color);
-    text-decoration: underline 3px double var(--accent-color);
+    text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -232,7 +242,7 @@
 
 .casha_lang_item:hover {
     color: var(--dark-color);
-    text-decoration: underline 3px double var(--accent-color);
+    text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -241,7 +251,7 @@
     font-weight: 800;
     pointer-events: none;
     color: var(--dark-color);
-    text-decoration: underline 3px double var(--accent-color);
+    text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
 }
@@ -266,10 +276,10 @@
 .casha_navbar_menu_items:focus-visible,
 .casha_navbar_logo a:focus-visible,
 .casha_lang_item:focus-visible {
-    outline: 3px solid var(--accent-color); /* Anillo verde esmeralda */
+    outline: 3px solid var(--accent-dark-color); 
     outline-offset: 3px;
     border-radius: 0.375rem;
-    background-color: rgba(0, 200, 117, 0.08); /* Sombreado sutil para resaltar la fila */
+    background-color: var(--accent-bg-color) 
 }
 
 .casha_cta_navbar:focus-visible {
@@ -287,7 +297,7 @@
     }
 }
 
-/* Footer */
+/* FOOTER */
 .casha_footer {
     display: flex;
     flex-direction: column;
@@ -299,5 +309,171 @@
 
     .casha_icon {
         height: 50px;
+    }
+}
+
+/* FLIPCARD */
+
+.casha_flipcard_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.casha_flipcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.casha_flipcard_container:hover .casha_flipcard,
+.casha_flipcard_container:focus-within .casha_flipcard {
+    transform: rotateY(180deg);
+}
+
+/* Caras base (Frente y Reverso) */
+.casha_flipcard_face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.casha_flipcard_front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: var(--bg-card-color);
+    color: var(--light-color);
+    gap: 1rem;
+}
+
+.casha_flipcard_back {
+    /* Accesibilidad lectores de pantalla */
+    visibility: hidden;
+    transition: visibility 0.7s;
+    /* Diseño base */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-color);
+    box-shadow: var(--shadow-light-box);
+    color: var(--light-color);
+    transform: rotateY(180deg);
+}
+
+/* Control de visibilidad para lectores de pantalla */
+.casha_flipcard_container:hover .casha_flipcard_back,
+.casha_flipcard_container:focus-within .casha_flipcard_back {
+    visibility: visible;
+}
+
+.casha_flipcard_container:hover .casha_flipcard_front,
+.casha_flipcard_container:focus-within .casha_flipcard_front {
+    visibility: hidden;
+    transition: visibility 0s linear 0.35s;
+}
+
+/* Título base dentro de la tarjeta */
+.casha_card_title {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.casha_card_title h3,
+.casha_flipcard_back h3 {
+    font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    text-align: center;
+}
+
+/* Indicador de giro ("More + icono") */
+.casha_flip_icon {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0;
+    color: var(--light-color);
+    transition: color 0.3s ease;
+}
+
+.casha_flip_icon .small {
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.casha_flip_icon svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.casha_flipcard_container:hover .casha_flip_icon,
+.casha_flipcard_container:focus-within .casha_flip_icon {
+    color: var(--accent-color);
+}
+
+.casha_flipcard_container:hover .casha_flip_icon svg,
+.casha_flipcard_container:focus-within .casha_flip_icon svg {
+    transform: rotate(45deg);
+}
+
+/* Accesibilidad: Navegación por teclado */
+.casha_flipcard_container:focus-visible {
+    outline: 4px solid var(--accent-dark-color);
+    outline-offset: 6px;
+    border-radius: 2.25rem;
+}
+
+.casha_flipcard_container:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Accesibilidad: Movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .casha_flipcard,
+    .casha_flip_icon,
+    .casha_flip_icon svg {
+        transition: none;
+    }
+
+    .casha_flipcard_container:hover .casha_flipcard,
+    .casha_flipcard_container:focus-within .casha_flipcard {
+        transform: none;
+    }
+
+    .casha_flipcard_back {
+        transform: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .casha_flipcard_container:hover .casha_flipcard_back,
+    .casha_flipcard_container:focus-within .casha_flipcard_back {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .casha_flipcard_container:hover .casha_flip_icon svg,
+    .casha_flipcard_container:focus-within .casha_flip_icon svg {
+        transform: none;
     }
 }

@@ -13,6 +13,7 @@
         <title>Casha | Digital Solutions</title>
     </head>
     <body>
+        <a href="#main-content" class="casha_skip_link">Skip to main content</a>
 
         <header id="casha_header" class="casha_header">
             <nav class="casha_navbar_container">
@@ -32,7 +33,7 @@
 
                    <!-- Menu Items -->
                     <div class="casha_navbar_menu">
-                        <span class="casha_navbar_menu_items active">
+                        <span class="casha_navbar_menu_items active" aria-current="page">
                             Home
                         </span>
                         <a href="#casha_skills" class="casha_navbar_menu_items">
@@ -61,7 +62,7 @@
 
                         <!-- CTA -->
                         <div class="casha_navbar_cta">
-                            <a href="https://wa.me/525653962754?text=Hola%20Casha"  class="casha_cta primarycta casha_cta_navbar" data-track="navbar_cta_whatsapp">
+                            <a href="https://wa.me/525653962754?text=Hola%20Casha"  class="casha_cta primarycta_dark casha_cta_navbar" data-track="navbar_cta_whatsapp">
                                 Drop a line
                             </a>
                         </div>
@@ -89,7 +90,7 @@
             </nav>
         </header>
 
-        <main id="casha_container" class="casha_container">
+        <main id="main-content" tabindex="-1">
             <!-- Heroarea -->
              <section id="casha_heroarea" class="casha_heroarea">
                 <div class="casha_heroarea_content">
@@ -103,7 +104,7 @@
                         From building your online presence to growing your business, we create digital solutions that turn your ideas into opportunities.
                     </p>
                     <div class="casha_heroarea_content_cta">
-                    <a href="#casha_contact" class="casha_cta primarycta">
+                    <a href="#casha_contact" class="casha_cta primarycta_dark">
                         Let's grow together
                     </a>
                     <a href="#casha_skills" class="casha_cta_link"> 
@@ -127,7 +128,7 @@
                     </h2>
                     <div class="casha_aboutme_content_text">
                         <p class="casha_p">
-                            As a curious builder, every project is a chance to learn, refine details, and <span class="casha_highlight ">create web solutions</span> that help your business <spanc class="casha_highlight">stand out and grow.</spanc>
+                            As a curious builder, every project is a chance to learn, refine details, and <span class="casha_highlight ">create web solutions</span> that help your business <span class="casha_highlight">stand out and grow.</span>
                         </p>
                         <p>
                             I believe great results happen when collaboration feels natural and far more rewarding for both sides.
@@ -154,9 +155,11 @@
                     </h2>
                 </div>
                 <div class="casha_skills_content">
-                    <article class="casha_skillcard_container" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    <!-- Ecommerce -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
                                     <img  src="./assets/casha-illustration-ecommerce.png" alt="Cashita the little fox holding a shopping bag and a box, representing online shopping.">
                                 </div>
@@ -179,7 +182,8 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
                                 <h3>
                                     ecommerce
                                 </h3>
@@ -203,9 +207,11 @@
                             </div>
                         </div>
                     </article>
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    <!-- Developer -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
                                     <img src="./assets/casha-illustration-developer.png" alt="Cashita the little fox working on a computer, surrounded by icons related to coding and website settings.">
                                 </div>
@@ -228,7 +234,8 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
                                 <h3>
                                     Web Development
                                 </h3>
@@ -251,10 +258,12 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    </article>
+                    <!-- Design -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration" >
                                     <img src="./assets/casha-illustration-design.png" alt="Cashita the fox mascot working on web design wireframes on a tablet surrounded by color palettes and a coffee cup">
                                 </div>
@@ -277,7 +286,8 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
                                 <h3>
                                     UX/UI Design
                                 </h3>
@@ -300,10 +310,12 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="casha_skillcard_container" tabindex="0">
-                        <div class="casha_skillcard">
-                            <div class="casha_skillcard_face casha_skillcard_front">
+                    </article>
+                    <!-- Marketing Digital -->
+                    <article class="casha_flipcard_container casha_skillcard_size" tabindex="0" role="group" aria-label="Detailed ecommerce services.">
+                        <div class="casha_flipcard">
+                            <!-- Front -->
+                            <div class="casha_flipcard_face casha_flipcard_front">
                                 <div class="casha_skillcard_illustration">
                                     <img src="./assets/casha-illustration-marketer.png" alt="Cashita fox announcing deals with a megaphone, surrounded by social media icons and KPI performance graphs">
                                 </div>
@@ -326,7 +338,8 @@
                                     
                                 </div>
                             </div>
-                            <div class="casha_skillcard_face casha_skillcard_back">
+                            <!-- Back -->
+                            <div class="casha_flipcard_face casha_flipcard_back casha_skillcard_back_content">
                                 <h3>
                                     Digital Marketing
                                 </h3>
@@ -349,7 +362,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </article >
                 </div>
             </section>
 
