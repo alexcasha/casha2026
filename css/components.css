@@ -21,16 +21,6 @@
     background-color: var(--secondary-color);
 }
 
-.primarycta_dark {
-    background-color: var(--accent-dark-color);
-    color: var( --dark-color);
-    border: 1.5px solid var(--dark-color);
-}
-
-.primarycta_dark:hover {
-    background-color: var(--secondary-color);
-}
-
 /* -------- RESPONSIVE CTA -------- */
 @media  (max-width: 670px) { 
    .casha_cta  {
