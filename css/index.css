@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     height: auto;
     padding: 2rem;
 
@@ -125,7 +125,7 @@
     .casha_heroarea_content_cta {
         a {
             font-size: 0.8125rem;
-            padding: 1rem 1.5rem;
+            padding: 0.5rem 1.5rem;
         }
     }
 }
@@ -139,7 +139,7 @@
     justify-content: center;
     max-width: 100%;
     height: auto;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 3rem 4rem;
     gap: 4rem;
 }
@@ -186,7 +186,6 @@
         text-align: start;
 
         .casha_highlight {
-            color: var(--dark-color);
             font-weight: 800;
             text-decoration: underline 3px  var(--accent-color);
             text-underline-offset: 4px;
@@ -274,12 +273,23 @@
 
 @media (max-width: 650px) {
     .casha_aboutme_content {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .casha_aboutme {
+        gap: 0;
+    }
+
+    .casha_aboutme_content {
         .casha_aboutme_quote {
             p {
                 font-size: 0.875rem;
             }
         }
     }
+
 }
 
 /* Skills */
@@ -301,6 +311,9 @@
     align-items: center;
     width: 100%;
     gap: 2rem;
+    text-decoration: underline 3px double var(--accent-color);
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: auto;
 }
 
 .casha_skills_content {
@@ -335,14 +348,19 @@
 .casha_skillcard_container:hover .casha_skillcard,
 .casha_skillcard_container:focus-within .casha_skillcard {
     transform: rotateY(180deg);
-
-    .casha_flip_icon {
-        color: var(--accent-color);
-        transform: rotate(45deg);
-    }
 }
 
- .casha_skillcard_face {
+.casha_skillcard_container:hover .casha_skillcard .casha_flip_icon,
+.casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon {
+    color: var(--accent-color);
+}
+
+.casha_skillcard_container:hover .casha_skillcard .casha_flip_icon svg,
+.casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon svg {
+    transform: rotate(45deg);
+}
+
+.casha_skillcard_face {
     position: absolute;
     inset: 0;
     backface-visibility: hidden;
@@ -394,24 +412,51 @@
     }
 }
 
+.casha_card_back_title {
+    font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    text-align: center;
+}
+
+.casha_skillcard_back li::before {
+    content: "✓ ";
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
 .casha_flip_icon {
-    display: flex;
+    display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
+    gap: 0.5em;
     margin: 0;
-    width: 26px;
-    height: 26px;
+    width: auto;
+    height: auto;
     color: var(--light-color); 
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
+
+    .small {
+        margin: 0;
+        line-height: 1;
+        white-space: nowrap;
+    }
 
     svg {
-        width: 100%;
-        height: 100%;
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
     }
 }
 
 .casha_skillcard_back {
+    /* Lector Readers */
+    visibility: hidden;
+    transition: visibility 0.7s;
+    /* Design */
     display: flex;
     flex-direction: column;
     padding: 5rem;
@@ -438,6 +483,18 @@
         color: var(--light-color);
         list-style-type: none;
     }
+}
+
+/* Lector Readers */
+.casha_skillcard_container:hover .casha_skillcard_back,
+.casha_skillcard_container:focus-within .casha_skillcard_back {
+    visibility: visible;
+}
+
+.casha_skillcard_container:hover .casha_skillcard_front,
+.casha_skillcard_container:focus-within .casha_skillcard_front {
+    visibility: hidden;
+    transition: visibility 0s linear 0.35s;
 }
 
 /* --------- RESPONSIVE Skills ---------  */
@@ -516,6 +573,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .casha_flip_icon {
+        span {
+            padding-right: 2.5rem;
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .casha_skills {
         padding: 2rem 1rem;
@@ -558,6 +623,52 @@
             font-size: 0.8125rem;
             line-height: 1.35;
         }
+    }
+}
+
+/* -------- NAVBAR Accessibility  keyboard navigation -------- */
+.casha_skillcard_container:focus-visible {
+    outline: 4px solid var(--accent-color); 
+    outline-offset: 6px;
+    border-radius: 2.25rem;
+}
+
+.casha_skillcard_container:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* -------- NAVBAR  PREFERS-REDUCED-MOTION -------- */
+@media (prefers-reduced-motion: reduce) {
+    /* 1. Eliminamos la animación de giro 3D y de rotación del ícono */
+    .casha_skillcard,
+    .casha_flip_icon,
+    .casha_flip_icon svg {
+        transition: none;
+    }
+
+    /* 2. En lugar de girar 180° en 3D, cambiamos las caras sin rotación */
+    .casha_skillcard_container:hover .casha_skillcard,
+    .casha_skillcard_container:focus-within .casha_skillcard {
+        transform: none;
+    }
+
+    /* 3. El reverso aparece de frente (sin espejo) al hacer hover o focus */
+    .casha_skillcard_back {
+        transform: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .casha_skillcard_container:hover .casha_skillcard_back,
+    .casha_skillcard_container:focus-within .casha_skillcard_back {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 4. El ícono de giro cambia de color pero no rota */
+    .casha_skillcard_container:hover .casha_skillcard .casha_flip_icon svg,
+    .casha_skillcard_container:focus-within .casha_skillcard .casha_flip_icon svg {
+        transform: none;
     }
 }
 
