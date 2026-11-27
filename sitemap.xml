@@ -94,4 +94,39 @@
     <priority>0.3</priority>
   </url>
 
+    <!-- TERMS AND CONDITIONS (INGLÉS ) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/terms-conditions.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/terms-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/terminos-condiciones.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+    <!-- TERMINOS Y CONDICIONES (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/terminos-condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/terms-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/terminos-condiciones.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+    <!-- COOKIE POLICY (INGLÉS ) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/cookie-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-cookie.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+    <!-- POLITICA DE COOKIES (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/politica-cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-cookie.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>

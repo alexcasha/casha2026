@@ -37,6 +37,10 @@
         padding-bottom: 1.5rem;
         margin: 0;
     }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .casha_privacynotice_content > ol {
@@ -93,6 +97,6 @@
     }
 
     .casha_privacynotice_content {
-        padding: 2rem 1.25rem; /* Reduce el margen lateral en celulares */
+        padding: 2rem 1.25rem; 
     }
-}
+}   
