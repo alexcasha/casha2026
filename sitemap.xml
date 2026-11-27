@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org"
+        xmlns:xhtml="http://w3.org">
+
+  <!-- HOME (INGLÉS - RAÍZ) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexcasha.github.io/casha2026/"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- HOME (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexcasha.github.io/casha2026/"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- JOURNEY (INGLÉS) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/journey.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/trayectoria.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- TRAYECTORIA (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/es/pages/trayectoria.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/trayectoria.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTACT (INGLÉS) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/contacto.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTACTO (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/es/pages/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/contacto.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PROJECTS (INGLÉS) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/proyectos.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PROYECTOS (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/es/pages/proyectos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/proyectos.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PRIVACY NOTICE (INGLÉS ) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/privacy-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/privacy-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-privacidad.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+    <!-- POLÍTICA PRIVACIDAD (ESPAÑOL) -->
+  <url>
+    <loc>https://alexcasha.github.io/casha2026/pages/privacy-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/privacy-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-privacidad.html"/>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

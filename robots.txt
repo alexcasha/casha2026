@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexcasha.github.io/casha2026/sitemap.xml

@@ -289,16 +289,99 @@
 
 /* FOOTER */
 .casha_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contact logo legal";
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: var( --light-color);
+}
+
+.casha_footer_contactinfo {
+    grid-area: contact;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 0.75rem;
+    max-width: 30ch;
+
+    .casha_footer_contactinfo_item {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 0.5rem;
+    }
+
+    .casha_footer_contactinfo_item p {
+        margin: 0;
+    }
+
+    .casha_footer_icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+}
+
+.casha_footer_logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
-    background-color: var( --light-color);
-    font-weight: 800;
+    text-align: center;
 
     .casha_icon {
+        width: auto;
         height: 50px;
+    }
+
+    a {
+        margin: 0.5rem 0 0 0;
+    }
+}
+
+.casha_footer_legal {
+    grid-area: legal;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    align-items:flex-end;
+    text-align: center;
+}
+
+/* RESPONSIVE FOOTER*/
+@media (max-width: 768px) {
+    .casha_footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "legal"
+            "contact"
+            "logo";
+        justify-items: center;
+        gap: 1.5rem;
+    }
+
+    .casha_footer_contactinfo {
+        align-items: flex-start;
+        text-align: left; 
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .casha_footer_contactinfo_item {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .casha_footer_legal {
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
     }
 }
 
@@ -466,4 +549,18 @@
     .casha_flipcard_container:focus-within .casha_flip_icon svg {
         transform: none;
     }
+}
+
+
+/* Banner Container */
+.casha_container_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 2px solid red;
 }

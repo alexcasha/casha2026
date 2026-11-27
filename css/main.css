@@ -1,3 +1,54 @@
+/* FONTS */
+/* MONTSERRAT ALTERNATES (Títulos) */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('../fonts/montserrat-alternates-v18-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('../fonts/montserrat-alternates-v18-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* QUICKSAND (Cuerpo de texto) */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/quicksand-v37-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/quicksand-v37-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/quicksand-v37-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/quicksand-v37-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     line-height: 1.4;
@@ -7,6 +58,7 @@
 }
 
 :root {
+    /* Colors */
     --primary-color: #2E4564;
     --secondary-color: #476B9A;
     --light-accent-color: #99B2CA;
@@ -25,16 +77,30 @@
     /* --light-color */
     --shadow-light-box: 0px 8px 18px rgba(228, 227, 221, 0.22);
 
+    /* TYPOGRAPHY */
     --header-font: "Montserrat Alternates", sans-serif;
     --body-font: "Quicksand", sans-serif;
+
+    --h1-font-size: clamp(2.25rem, 1.79rem + 1.95vw, 3.5rem);
+    --h1-line-height: 1.2;
+    --h2-font-size: clamp(1.75rem, 1.57rem + 0.78vw, 2.25rem);
+    --h2-line-height: 1.2;
+    --h3-font-size: clamp(1.25rem, 1.2rem + 0.2vw, 1.375rem);
+    --h3-line-height: 1.3;
+    --p-font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+    --p-line-height: 1.5;
+    --li-font-size: clamp(0.9375rem, 0.91rem + 0.1vw, 1rem);
+    --li-line-height: 1.5;
+    --small-font-size: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+    --small-line-height: 1.4;
 }
 
 body {
     background-color: var(--light-color);
     font-family: var(--body-font);
-    font-size: 1.125rem;
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
     font-weight: 500;
-    line-height: 1.5;
     color: var(--dark-color);
 
     p {
@@ -42,9 +108,9 @@ body {
     }
 
     .small {
-        font-size: 0.875rem;
-        line-height: 1.4;
-        font-weight: 400;
+        font-size: var(--small-font-size);
+        line-height: var(--small-line-height);
+        font-weight: 600;
     }
 
     h1,
@@ -54,24 +120,26 @@ body {
     }
 
     h1 {
-        font-size: 3.75rem;
+        font-size: var(--h1-font-size);
         font-weight: 700;
-        line-height: 1.2;
+        line-height: var(--h1-line-height);
+        letter-spacing: -0.02em;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: var(--h2-font-size);
         font-weight: 600;
-        line-height: 1.2;
+        line-height:  var(--h2-line-height);
     }
 
     h3 {
-        font-size: 1.75rem;
+        font-size: var(--h3-font-size);
+        line-height: var(--h3-line-height);
         font-weight: 600;
-        line-height: 1.3;
     }
 
     .casha_title {
+        font-size: clamp(1.75rem, 1.15rem + 2.5vw, 3.5rem);
         font-family: var(--header-font);
         color: var(--dark-color);
         text-align: center;    
@@ -83,61 +151,6 @@ body {
         font-weight: 600;
         text-decoration: none;
         color: var(--dark-color);
-    }
-}
-
-
-
-/* RESPONSIVE */
-@media  (max-width: 650px) { 
-    body {
-        font-size: 0.875rem;
-        line-height: 1.4;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-        font-weight: 600;
-        line-height: 1.3;
-    }
-
-    h3 {
-        font-size: 1.125rem;
-        font-weight: 600;
-        line-height: 1.5;
-    }
-
-    p,
-    strong,
-    a,
-    li {
-        font-size: 0.875rem;
-        font-weight: 650;
-    }
-
-    .casha_title {
-        font-size: 2.5rem;
-        line-height: 1.3;
-    }
-}
-
-@media (max-width: 470px) {
-    .casha_title {
-        font-size: 1.75rem;
-        line-height: 1.5;
-    }
-
-    p,
-    strong,
-    a,
-    li {
-        font-size: 0.875rem;
-        font-weight: 500;
     }
 }
 
