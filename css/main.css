@@ -104,7 +104,7 @@ body {
     color: var(--dark-color);
 
     p {
-        max-width: 60ch;
+        max-width: 65ch;
     }
 
     .small {

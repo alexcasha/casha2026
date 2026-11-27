@@ -5,55 +5,49 @@
     align-items: flex-start;
     max-width: 100%;
     height: 70vh;
-    padding: 2rem;
-    background-image: url(../assets/casha-bg-heroarea-lp.jpeg);
+    padding-block: 3rem;
+    background-image: url(../assets/casha-bg-heroarea-lp.webp);
     background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .casha_heroarea_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 80%;
-    height: auto;
-    padding: 2rem;
+    gap: 1rem;
 
     h1,
     p  {
         text-align: start;
-        margin: 0.5rem;
+        margin: 0;
     }
 }
 
-.casha_titlle_span {
+.casha_title_span {
     color: var(--accent-dark-color);
 }
 
 .casha_heroarea_content_cta {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem 0.5rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
     box-shadow: var(--inactive-color);
 }
 
 
 .casha_cta_link {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 0.5rem;
 }
 
 .casha_cta_link:hover {
     font-style: italic;
-    cursor: default;
+    cursor: pointer;
     text-decoration: underline 3px double  var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
@@ -62,12 +56,10 @@
 /* --------- RESPONSIVE HERO ---------  */
 @media  (max-width: 1024px) { 
     .casha_heroarea_content_cta {
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: flex-start;
         gap: 1rem;
-        padding: 1rem 0;
+        padding-block: 1rem;
     }
 
     .casha_cta_link {
@@ -77,18 +69,16 @@
 
 @media  (max-width: 880px) { 
     .casha_heroarea {
-        background-image: url(../assets/casha-bg-heroarea-mb.jpeg);
+        min-height: 60vh;
+        background-image: url(../assets/casha-bg-heroarea-mb.webp);
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
     }
 
     .casha_heroarea_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-content: center;
-        width: 100%;
+        gap: 2rem;
 
         h1,
         p  {
@@ -103,30 +93,16 @@
     .casha_cta_link {
         padding-left: 0;
     }
-
-    .casha_heroarea {
-        height: 80vh;
-    }
-}
-
-@media (max-width: 650px) {
-    .casha_heroarea {
-        height: 60vh;
-    }
 }
 
 @media (max-width: 375px) {
-     .casha_heroarea {
-        height: 60vh;
-    }
-
     .casha_heroarea_content {
         padding: 0;
     }
 
     .casha_heroarea_content_cta {
         a {
-            font-size: 0.8125rem;
+            font-size: var(--small-font-size);
             padding: 0.5rem 1.5rem;
         }
     }
@@ -135,57 +111,61 @@
 
 /* About me */
 .casha_aboutme {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     background-color: var(--primary-color);
-    padding: 3rem 4rem;
+    padding-block: 4rem;
+}
+
+.casha_aboutme_grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 4rem;
 }
 
 .casha_aboutme_illustration {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
+    max-width: 450px;
+    max-height: 500px;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
-    height: auto;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: var(--shadow-light-box);
 
     img {
         object-fit: cover;
+        object-position: center top;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
- .casha_aboutme_content {
+.casha_aboutme_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 80%;
+    width: 55%; 
     color: var(--light-color);
-    padding: 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
 
-   .casha_title {
+    .casha_title {
         color: var(--light-color);
         text-align: start;
-        padding: 0 2rem;
+        margin: 0;
     }
 
     .casha_aboutme_content_text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        padding: 0.5rem 2rem;
         gap: 1rem;
         text-align: start;
+
+        p {
+            margin: 0;
+        }
 
         .casha_highlight {
             font-weight: 800;
@@ -198,15 +178,15 @@
     .casha_aboutme_quote {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-end;
-        padding: 0 2rem;
+        margin: 0;
         gap: 0.5rem;
 
         p {
-            font-size: 1rem;
-            line-height: 1.4;
+            font-size: var(--p-font-size);
+            line-height: var(--small-line-height);
             font-weight: 400;
+            margin: 0;
         }
 
         strong,
@@ -215,6 +195,7 @@
         }
 
         .small {
+            font-size: var(--small-font-size);
             font-style: italic;
             font-weight: 700;
             padding-top: 0.5rem;
@@ -222,7 +203,7 @@
         
         .small:hover {
             color: var(--dark-color);
-            cursor: default;
+            cursor: pointer;
             text-decoration: underline 3px  var(--accent-color);
             text-underline-offset: 4px;
             text-decoration-skip-ink: auto;
@@ -230,81 +211,46 @@
     }
 }
 
-/* --------- RESPONSIVE About me ---------  */
+/* --------- RESPONSIVE About me --------- */
 @media (max-width: 1024px) { 
     .casha_aboutme {
+        padding-block: 3rem;
+    }
+
+    .casha_aboutme_grid {
         flex-direction: column;
         align-items: center;
-        padding: 3rem 2rem;
         gap: 2.5rem;
     }
 
-    .col-2{
+    .col-2 {
         order: -1;
     }
 
     .casha_aboutme_illustration {
-        width: 70%;
+        width: 100%;
         max-width: 420px;
     }
 
     .casha_aboutme_content {
         width: 100%;
-        padding: 1rem;
         align-items: center;
         text-align: center;
 
-        .casha_title {
-            text-align: center;
-            padding: 0;
-        }
-
-        .casha_aboutme_content_text {
-            align-items: center;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-
+        .casha_title,
+        .casha_aboutme_content_text,
         .casha_aboutme_quote {
             align-items: center;
             text-align: center;
-            padding: 0.5rem 0;
         }
     }
 }
 
-@media (max-width: 650px) {
-    .casha_aboutme_content {
-        padding: 2rem 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .casha_aboutme {
-        gap: 0;
-    }
-
-    .casha_aboutme_content {
-        .casha_aboutme_quote {
-            p {
-                font-size: 0.875rem;
-            }
-        }
-    }
-
-}
-
-/* Contact */
+/* SKILLS */
 .casha_skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     background-color: var(--light-accent-color);
-    padding: 3rem 4rem;
-    gap: 2rem;
+    padding-block: 4rem;
 }
 
 .casha_skills_title {
@@ -312,7 +258,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 2rem;
+    gap: 2.5rem;
     text-decoration: underline 3px double var(--accent-dark-color);
     text-underline-offset: 4px;
     text-decoration-skip-ink: auto;
@@ -322,17 +268,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
     gap: 1.5rem;
-    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 /* Tamaño específico de las tarjetas en Skills */
 .casha_skillcard_size {
     width: 500px;
-    height: 500px;
+    height: 400px;
 }
 
 /* Ilustración interna (Frente) */
@@ -341,7 +287,7 @@
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
-    max-width: 12rem;
+    max-width: 11rem;
     min-height: 0;
 }
 
@@ -354,20 +300,39 @@
 
 /* Lista de servicios (Reverso) */
 .casha_skillcard_back_content {
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+
+    h3 {
+        width: 100%;
+        text-align: center; 
+        margin: 0;
+        padding-bottom: 1rem;
+    }
 }
 
 .casha_skillcard_back_content ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    width: fit-content;
+    max-width: 100%;
+    gap: 0.6rem;
     text-align: left;
-    margin-top: 2rem;
-    margin-left: 0;
+    margin-top: 1.5rem;
+    margin-inline: auto;
     padding: 0;
 }
 
 .casha_skillcard_back_content li {
+    font-size: var(--li-font-size);
+    line-height: var(--li-line-height);
     color: var(--light-color);
     list-style-type: none;
 }
@@ -379,117 +344,86 @@
 }
 
 /* --------- RESPONSIVE Skills --------- */
-@media (max-width: 1190px) {
+@media (max-width: 1090px ) {
     .casha_skillcard_size {
-        width: 400px;
+        width: 350px;
         height: 400px;
     }
 
-    .casha_skillcard_illustration {
-        max-width: 10.5rem;
-    }
-
-    .casha_skillcard_back_content {
-        padding: 2.5rem;
-    }
-
-    .casha_skillcard_back_content li {
-        font-size: 1rem;
+    .casha_skills_content {
+        justify-content: center;
     }
 }
 
 @media (max-width: 990px) {
     .casha_skills {
-        padding: 2.5rem 2rem;
+        padding-block: 3rem;
     }
 
     .casha_skillcard_size {
-        width: 350px;
-        height: 350px;
-    }
-
-    .casha_skillcard_size .casha_flipcard_face {
-        padding: 1.5rem;
-        gap: 0.75rem;
+        width: 340px;
+        height: 360px;
     }
 
     .casha_skillcard_illustration {
         max-width: 9.5rem;
     }
 
-    .casha_skillcard_size .casha_card_title h3 {
-        font-size: 1.05rem;
-        line-height: 1.3;
-    }
-
     .casha_skillcard_back_content {
-        padding: 2.25rem;
-    }
-
-    .casha_skillcard_back_content h3 {
-        font-size: 1.125rem;
-        line-height: 1.5;
+        padding: 2rem;
     }
 
     .casha_skillcard_back_content ul {
         margin-top: 1rem;
-        gap: 0.35rem;
-    }
-
-    .casha_skillcard_back_content li {
-        font-size: 0.875rem;
+        gap: 0.45rem;
     }
 }
 
 @media (max-width: 480px) {
-    .casha_skills {
-        padding: 2rem 1rem;
-    }
-
     .casha_skillcard_size {
         width: 100%;
         max-width: 320px;
-        height: 320px;
-    }
-}
-
-@media (max-width: 375px) {
-    .casha_skillcard_size {
-        max-width: 300px;
-        height: 300px;
+        height: 340px;
     }
 
     .casha_skillcard_back_content {
-        padding: 1.75rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .casha_skillcard_back_content li {
+        font-size: var(--small-font-size);
+        line-height: var(--small-line-height);
     }
 
-    .casha_skillcard_back_content h3 {
-        font-size: 1rem;
+    .casha_skillcard_back_content {
+        align-items: flex-start;
+        padding: 1.5rem;
     }
 
     .casha_skillcard_back_content ul {
-        margin-top: 0.85rem;
-        gap: 0.3rem;
-    }
-
-    .casha_skillcard_back_content li {
-        font-size: 0.8125rem;
-        line-height: 1.35;
+        width: 100%;
+        margin-inline: 0;
+        margin-top: 1rem;
+        gap: 0.45rem;
     }
 }
 
 /* Contact */
 .casha_contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     background-color: var( --dark-color);
     color: var(--light-color);
-    padding: 3rem 4rem;
-    gap: 2rem;
+    padding-block: 4rem;
+}
+
+.casha_contact_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
 }
 
 .casha_contact_content {
@@ -497,32 +431,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 100%;   
-    height: auto;
+    width: 55%;   
+    gap: 1.25rem;
 }
 
 .casha_contact_title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     width: 100%;
-    padding: 2rem 0;
 
     h2 {
         color: var(--light-color);
+        text-align: start;
         margin: 0;
     }
 }
 
 .casha_contact_text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    padding-bottom: 1rem;
 
     p {
+        text-align: start;
         margin: 0;
     }
 }
@@ -531,12 +462,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
     width: 100%;
     
     .casha_cta {
-        gap: 1rem;
-        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: fit-content;
+        min-width: 240px;
     }
 }
 
@@ -544,13 +479,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem;
+    align-items: center;
+    padding-top: 0.75rem;
     width: 100%;
-    gap: 2rem;
+    gap: 1.75rem;
 
     .casha_icon {
-        height: 30px;
+        width: 28px;
+        height: 28px;
         stroke: var(--light-color);
         stroke-width: 1.8;
         transition: stroke 0.25s ease, transform 0.25s ease;
@@ -558,7 +494,7 @@
     
     .casha_icon:hover {
         stroke: var(--secondary-color);
-        stroke-width: 1.8;
+        transform: translateY(-2px);
     }
 }
 
@@ -566,91 +502,71 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    width: 45%;
 
     img {
         max-width: 100%;
         height: auto;
+        object-fit: contain;
     }        
 }
 
 /* --------- RESPONSIVE Contact ---------  */
-@media  (max-width: 1024px) { 
+@media (max-width: 1024px) { 
     .casha_contact {
+        padding-block: 3rem;
+    }
+
+    .casha_contact_grid {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 2.5rem 2rem;
+        gap: 2.5rem;
     }
 
     .casha_contact_content {
+        justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-    .casha_contact_title {
-        align-items: center;
+    .casha_contact_title h2 {
         text-align: center;
-        padding: 1rem 0;
     }
 
     .casha_contact_text {
-        justify-content: center;
+        justify-items: center;
         align-items: center;
         text-align: center;
-    }
 
-    .casha_contact_cta {
-        justify-content: center;
-        width: 100%;
-
-        .casha_cta {
-            width: 50%;
-            justify-content: center;
+        p {
             text-align: center;
         }
+}
+
+    .casha_contact_cta {
+        justify-content: center;
+
+        .casha_cta {
+            width: 100%;
+            max-width: 320px;
+        }
     }
 
     .casha_contact_rrss {
         justify-content: center;
-        align-items: center;
     }
 
-    .casha_contact_illustrarion 
-    img {
-        aspect-ratio: 2/1;
-        height: 200px;
-        object-fit: contain;
+    .casha_contact_illustration {
+        width: 100%;
+        max-width: 320px;
     }
 }
 
-@media (max-width: 650px) {
-    .casha_contact {
-        padding: 2rem 1.25rem;
-    }
-
+@media (max-width: 320px) {
     .casha_contact_cta {
-        .casha_cta {
-            width: 100%;
-        }
-    }
-}
-
-@media (max-width: 375px) {
-    .casha_contact {
-        padding: 1.75rem 1rem;
-    }
-
-    .casha_contact_rrss {
-        gap: 1.25rem;
-    }
-
-    .casha_contact_cta
-    .casha_cta {
-        font-size: 0.8125rem ;
-
-        .casha_icon {
-            width: 20px;
+        a {
+            font-size: var(--small-font-size);
         }
     }
 }

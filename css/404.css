@@ -1,8 +1,21 @@
-.casha_404_container {
+.casha_404_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: none;
-    padding: 0;
-    margin: 0;
+    min-height: calc(100dvh - 170px); 
+    padding-block: 3rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    box-sizing: border-box;
+}
+
+.casha_404_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 
@@ -10,9 +23,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: calc(100vh - 170px);
-    margin-left: calc(50% - 50vw);
-    overflow: hidden;
-    background-color: var(--dark-color);
+    width: 100%;
+    max-height: 480px;
+
+    img {
+        width: 100%;
+        max-height: 40dvh;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.casha_404_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 55ch;
+
+    h3 {
+        color: var(--light-color);
+        margin: 0;
+    }
+
+    .casha_cta {
+        margin-top: 2.5rem;
+    }
 }
