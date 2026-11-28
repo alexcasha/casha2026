@@ -1,4 +1,4 @@
-![Logo casha](assets/casha_brand_monograma.png)
+![Logo casha](assets/casha_brand_monograma.webp)
 
 Welcome to my digital portfolio! Here you’ll find a collection of my most notable projects in **UX/UI Design, Web Development, Digital Marketing,
 and eCommerce**. This portfolio is designed to showcase my experience, skills, and detail-oriented, innovative approach to the digital world.
@@ -50,6 +50,6 @@ customer satisfaction and operational efficiency.
 
 ## Get in Touch
 If you're interested in collaborating, have a project in mind, or just want to connect, feel free to reach out!
-- *Email* [contacto@casha.mx](mailto:lexcasha@gmail.com)
+- *Email* [contacto.casha@gmail.com](mailto:contacto.casha@gmail.com)
 - *LinkedIn:* [linkedin.com](https://www.://linkedin.com/)
-- *Live Portfolio:* [casha.mx]([https://casha.mx](https://alexcasha.github.io/casha2026/))
+- *Live Portfolio:* [casha.mx]([https://cashamx.netlify.app/))
