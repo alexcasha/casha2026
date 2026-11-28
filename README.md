@@ -1,4 +1,4 @@
-![Logo casha](assets/casha_brand_monograma.png)
+![Logo casha](assets/casha_brand_monograma.webp)
 
 Welcome to my digital portfolio! Here you’ll find a collection of my most notable projects in **UX/UI Design, Web Development, Digital Marketing,
 and eCommerce**. This portfolio is designed to showcase my experience, skills, and detail-oriented, innovative approach to the digital world.
