@@ -1,15 +1,19 @@
 /* CTA */
 .casha_cta {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-family: var( --header-font);
-    font-size: 1.125rem;
+    font-size:  var(--p-font-size);
+    line-height: var(--h2-line-heigh);
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 1rem;
-    padding: 1rem 2.5rem;
+    padding: clamp(0.75rem, 0.65rem + 0.4vw, 1rem) clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
     border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-sizing: border-box;
 }
 
 .primarycta {
@@ -21,18 +25,6 @@
     background-color: var(--secondary-color);
 }
 
-/* -------- RESPONSIVE CTA -------- */
-@media  (max-width: 670px) { 
-   .casha_cta  {
-        padding: 0.5rem 2.5rem;
-   }
-}
-
-@media  (max-width: 460px) { 
-   .casha_cta  {
-        font-size: 0.875rem;
-   }
-}
 
 /* NAVBAR */
 .casha_header {
