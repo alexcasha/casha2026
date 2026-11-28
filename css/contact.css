@@ -1,0 +1,422 @@
+.casha_contact_hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-block: 4rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    box-sizing: border-box;
+}
+
+.casha_contact_grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.casha_contact_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55%;
+    gap: 1.5rem;
+
+    h1 {
+        color: var(--light-color);
+        text-align: start;
+        margin: 0;
+    }
+
+    p {
+        text-align: start;
+        margin: 0;
+    }
+
+    .casha_cta_contact {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: fit-content;
+        min-width: 270px;
+    } 
+
+    .casha_contact_content_rrss {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            color: var(--light-color);
+            font-size: var(--small-font-size);
+            text-decoration: underline 3px var(--accent-dark-color);
+            text-underline-offset: 4px;
+            text-decoration-skip-ink: auto;
+            transition: color 0.2s ease;
+        }
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
+
+    .casha_tag {
+        width: fit-content;
+        padding: 0.5rem 1.25rem;
+        border-radius: 1.5rem;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        font-size: var(--small-font-size);
+        margin-top: 0.5rem;
+    }
+}
+
+.casha_contact_illustration {
+    width: fit-content;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1.5rem;
+    margin-top: 0.5rem;
+
+    img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* --------- RESPONSIVE CONTACT PAGE --------- */
+@media (max-width: 1024px) {
+    .casha_contact_hero {
+        padding-block: 4rem;
+    }
+
+    .casha_contact_grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .casha_contact_content {
+        align-items: center;
+        width: 100%;
+    }
+
+    .casha_contact_content h1,
+    .casha_contact_content p {
+        text-align: center;
+    }
+
+    .casha_cta_contact {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .casha_contact_content_rrss {
+        justify-content: center;
+    }
+
+    .casha_contact_illustration {
+        width: 100%;
+        max-width: 00px;
+    }
+}
+
+/* FAQ */
+.casha_contact_faq {
+    width: 100%;
+    padding-block: 4rem;
+    background-color: var(--light-accent-color);
+    color: var(--dark-color);
+    box-sizing: border-box;
+}
+
+.casha_contact_faq_header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.casha_contact_faq_header .casha_title {
+    margin: 0;
+}
+
+.casha_contact_faq_list {
+    display: flex;
+    flex-direction: column;
+    max-width: 820px;
+    margin-inline: auto;
+    gap: 1rem;
+}
+
+.casha_faq_item {
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-box);
+    overflow: hidden;
+    transition: background-color 0.25s ease;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+.casha_faq_question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.75rem;
+    font-family: var(--header-font);
+    font-size: var(--h3-font-size);
+    line-height: var( --h3-line-height);
+    font-weight: 700;
+    color: var(--light-color);
+    cursor: pointer;
+    list-style: none; 
+    user-select: none;
+}
+
+.casha_faq_question::-webkit-details-marker {
+    display: none;
+}
+
+
+.casha_faq_question::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.casha_faq_item[open] {
+    background-color: var(--inactive-color);
+    color: var(--dark-color);
+}
+
+.casha_faq_item[open] .casha_faq_question {
+    color: var(--dark-color);
+    padding-bottom: 0.75rem;
+}
+
+.casha_faq_item[open] .casha_faq_question::after {
+    content: "−";
+    color: var(--accent-dark-color);
+}
+
+.casha_faq_answer {
+    padding: 0 1.75rem 1.5rem;
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        font-size: var(--li-font-size);
+        line-height: var(--li-line-height);
+        font-weight: 800;
+
+        p {
+            font-weight: 400;
+        }
+    }
+
+    li::before {
+        content: "✓ ";
+        color: var(--accent-dark-color);
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 650px) {
+    .casha_faq {
+        padding-block: 3rem;
+    }
+
+    .casha_faq_question {
+        padding: 1rem 1.25rem;
+    }
+
+    .casha_faq_answer {
+        padding: 0 1.25rem 1.25rem;
+    }
+}
+
+
+/* CONTACT */
+.casha_contact_banner {
+    width: 100%;
+    background-color: var( --dark-color);
+    color: var(--light-color);
+    padding-block: 4rem;
+}
+
+.casha_contact_banner_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.casha_contact_banner_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55%;   
+    gap: 1.25rem;
+}
+
+.casha_contact_banner_title {
+    width: 100%;
+
+    h2 {
+        color: var(--light-color);
+        text-align: start;
+        margin: 0;
+    }
+}
+
+.casha_contact_banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    p {
+        text-align: start;
+        margin: 0;
+    }
+}
+
+.casha_contact_banner_cta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.75rem;
+    width: 100%;
+    
+    .casha_cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: fit-content;
+        min-width: 240px;
+    }
+}
+
+.casha_contact_banner_rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.75rem;
+    width: 100%;
+    gap: 1.75rem;
+
+    .casha_icon {
+        width: 28px;
+        height: 28px;
+        stroke: var(--light-color);
+        stroke-width: 1.8;
+        transition: stroke 0.25s ease, transform 0.25s ease;
+    }
+    
+    .casha_icon:hover {
+        stroke: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+}
+
+.casha_contact_banner_illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }        
+}
+
+/* --------- RESPONSIVE Contact ---------  */
+@media (max-width: 1024px) { 
+    .casha_contact_banner {
+        padding-block: 3rem;
+    }
+
+    .casha_contact_banner_grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .casha_contact_banner_content {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .casha_contact_banner_title h2 {
+        text-align: center;
+    }
+
+    .casha_contact_banner_text {
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+}
+
+    .casha_contact_banner_cta {
+        justify-content: center;
+
+        .casha_cta {
+            width: 100%;
+            max-width: 320px;
+        }
+    }
+
+    .casha_contact_banner_rrss {
+        justify-content: center;
+    }
+
+    .casha_contact_banner_illustration {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .casha_contact_banner_cta {
+        a {
+            font-size: var(--small-font-size);
+        }
+    }
+}
