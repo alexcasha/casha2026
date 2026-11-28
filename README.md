@@ -50,6 +50,6 @@ customer satisfaction and operational efficiency.
 
 ## Get in Touch
 If you're interested in collaborating, have a project in mind, or just want to connect, feel free to reach out!
-- *Email* [contacto@casha.mx](mailto:lexcasha@gmail.com)
+- *Email* [contacto.casha@gmail.com](mailto:contacto.casha@gmail.com)
 - *LinkedIn:* [linkedin.com](https://www.://linkedin.com/)
-- *Live Portfolio:* [casha.mx]([https://casha.mx](https://alexcasha.github.io/casha2026/))
+- *Live Portfolio:* [casha.mx]([https://cashamx.netlify.app/))
