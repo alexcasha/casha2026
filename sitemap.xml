@@ -4,128 +4,128 @@
 
   <!-- HOME (INGLÉS - RAÍZ) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexcasha.github.io/casha2026/"/>
+    <loc>https://cashamx.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cashamx.netlify.app/"/>
     <lastmod>2026-11-26</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- HOME (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexcasha.github.io/casha2026/"/>
+    <loc>hhttps://cashamx.netlify.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cashamx.netlify.app/"/>
     <lastmod>2026-11-26</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- JOURNEY (INGLÉS) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/journey.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/journey.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/trayectoria.html"/>
+    <loc>https://cashamx.netlify.app/pages/journey.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/trayectoria.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- TRAYECTORIA (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/es/pages/trayectoria.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/journey.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/trayectoria.html"/>
+    <loc>https://cashamx.netlify.app/es/pages/trayectoria.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/trayectoria.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- CONTACT (INGLÉS) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/contacto.html"/>
+    <loc>https://cashamx.netlify.app/pages/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/contacto.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- CONTACTO (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/es/pages/contacto.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/contacto.html"/>
+    <loc>https://cashamx.netlify.app/es/pages/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/contacto.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- PROJECTS (INGLÉS) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/projects.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/projects.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/proyectos.html"/>
+    <loc>https://cashamx.netlify.app/pages/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/proyectos.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- PROYECTOS (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/es/pages/proyectos.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/projects.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/proyectos.html"/>
+    <loc>https://cashamx.netlify.app/es/pages/proyectos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/proyectos.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- PRIVACY NOTICE (INGLÉS ) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/privacy-notice.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/privacy-notice.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-privacidad.html"/>
+    <loc>https://cashamx.netlify.app/pages/privacy-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/privacy-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/politica-privacidad.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
 
     <!-- POLÍTICA PRIVACIDAD (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/privacy-notice.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/privacy-notice.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-privacidad.html"/>
+    <loc>https://cashamx.netlify.app/pages/privacy-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/privacy-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/politica-privacidad.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
 
     <!-- TERMS AND CONDITIONS (INGLÉS ) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/terms-conditions.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/terms-conditions.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/terminos-condiciones.html"/>
+    <loc>https://cashamx.netlify.app/pages/terms-conditions.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/terms-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/terminos-condiciones.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
 
     <!-- TERMINOS Y CONDICIONES (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/terminos-condiciones.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/terms-conditions.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/terminos-condiciones.html"/>
+    <loc>https://cashamx.netlify.app/pages/terminos-condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/terms-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/terminos-condiciones.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
 
     <!-- COOKIE POLICY (INGLÉS ) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/cookie-policy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/cookie-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-cookie.html"/>
+    <loc>https://cashamx.netlify.app/pages/cookie-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/politica-cookie.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
 
     <!-- POLITICA DE COOKIES (ESPAÑOL) -->
   <url>
-    <loc>https://alexcasha.github.io/casha2026/pages/politica-cookie.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexcasha.github.io/casha2026/pages/cookie-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alexcasha.github.io/casha2026/es/pages/politica-cookie.html"/>
+    <loc>https://cashamx.netlify.app/pages/politica-cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cashamx.netlify.app/pages/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cashamx.netlify.app/es/pages/politica-cookie.html"/>
     <lastmod>2026-11-26</lastmod>
     <priority>0.3</priority>
   </url>
